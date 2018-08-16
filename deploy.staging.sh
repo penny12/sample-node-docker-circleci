@@ -1,7 +1,7 @@
 #!/bin/bash
 docker push hitaraku/sample-node:staging
 
-ssh deploy@159.65.10.100 << EOF
+ssh deploy@206.189.32.247 << EOF
 docker pull hitaraku/sample-node:staging
 docker stop web || true
 docker rm web || true
